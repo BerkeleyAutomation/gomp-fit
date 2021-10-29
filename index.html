@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf=8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Jeffrey Ichnowski, Yahav Avigal, Yi Liu, Ken Goldberg" />
+    <title>GOMP-FIT: Grasp-Optimized Motion Planning for Fast Inertial Transport</title>
+
+    <link rel="canonical" href="https://berkeleyautomation.github.io/gomp-fit/" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XSHHP5NK7Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XSHHP5NK7Q');
+    </script>
+  </head>
+  <body>
+    <header class="container">
+      <div class="p-4 p-md-5 mb-4 rounded bg-light gompfit-head">
+        <h1 class="display-4" style="font-weight: bold;"> <!--  fst-italic"> -->
+          GOMP-FIT: Grasp-Optimized Motion Planning for Fast Inertial Transport
+        </h1>
+        <p class="my-3 h3" style="font-weight: normal;">
+          <a href="https://ichnow.ski/">Jeffrey Ichnowski</a>,
+          Yahav Avigal,
+          Yi Liu,
+          <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>
+        </p>
+        <p class="lead my-3">
+          Rapidly transporting objects using inertial effects to avoiding spills and damage to fragile objects.
+        </p>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="col-md-8 offset-md-2">
+
+        <p class="text-center">
+          <a class="btn btn-primary" href="https://arxiv.org/abs/2110.15326">Paper (arXiv)</a>
+        </p>
+
+        <h2>Video</h2>
+        <iframe width="560" height="315" style="margin: auto; display:block;" src="https://www.youtube.com/embed/OWJjSHdtojY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Abstract</h2>
+        <p>
+          High-speed motions in pick-and-place operations are critical to making robots cost-effective in many automation scenarios, from warehouses and manufacturing to hospitals and homes.  However, motions can be too fast&mdash;such as when the object being transported has an open-top, is fragile, or both.  One way to avoid spills or damage, is to move the arm slowly.  We propose Grasp-Optimized Motion Planning for Fast Inertial Transport (GOMP-FIT), a time-optimizing motion planner based on our prior work, that includes constraints based on accelerations at the robot end-effector.  With GOMP-FIT, a robot can perform high-speed motions that avoid obstacles and use inertial forces to its advantage.  In experiments transporting open-top containers with varying tilt tolerances, whereas GOMP computes sub-second motions that spill up to 90% of the contents during transport, GOMP-FIT generates motions that spill 0% of contents while being slowed by as little as 0% when there are few obstacles, 30% when there are high obstacles and 45-degree tolerances, and 50% when there 15-degree tolerances and few obstacles.
+        </p>
+
+        <h3>Citation</h3>
+        <pre>@misc{ichnowski2021gompfit,
+  title={{GOMP-FIT}: Grasp-Optimized Motion Planning for Fast Inertial Transport}, 
+  author={Jeffrey Ichnowski and Yahav Avigal and Yi Liu and Ken Goldberg},
+  year={2021},
+  eprint={2110.15326},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO}
+}</pre>
+
+
+      </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>
